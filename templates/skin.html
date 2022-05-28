@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+
+  <title>To Do List</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">WIW</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </nav>
+
+  <br />
+  <br />
+
+  <div class="row mx-5 pb-5">
+    <br>
+
+    <!-- Tabel 1 -->
+    <div class="col-9">
+      <h3>TABEL PASIEN</h3>
+      <!-- TABEL1 -->
+
+      <table align="left" border="1" class="table" style="text-align: center;">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">NO</th>
+            <th scope="col">NIK</th>
+            <th scope="col">NAMA</th>
+            <th scope="col">TEMPAT</th>
+            <th scope="col">TANGGAL LAHIR</th>
+            <th scope="col">GENDER</th>
+            <th scope="col">EMAIL</th>
+            <th scope="col">NO. TELEPON</th>
+            <th scope="col">ACTION EDIT</th>
+            <th scope="col">ACTION DELETE</th>
+          </tr>
+        </thead>
+        <tr>
+          DATA_TABEL
+        </tr>
+
+      </table>
+
+      <br>
+
+
+    </div>
+
+    <div class="col-3 bg-light">
+      <h3 class="pt-5 text-center">TAMBAH DATA</h3>
+      <form action="index.php" method="POST">
+        <div class="mb-3">
+          <label for="" class="form-label">NIK</label>
+          <input type="text" class="form-control" placeholder="nik" name = "nik" id="nik" aria-describedby="nik" required>
+        </div>
+        <div class="mb-3">
+          <label for="" class="form-label">Nama</label>
+          <input type="text" class="form-control" placeholder="nama" name = "nama" id="nama" aria-describedby="nama" required>
+        </div>
+        <div class="mb-3">
+          <label for="" class="form-label">Tempat</label>
+          <input type="text" class="form-control" placeholder="tempat" name = "tempat" id="tempat" aria-describedby="tempat" required>
+        </div>
+        <div class="mb-3">
+          <label for="" class="form-label">Tanggal Lahir</label>
+          <input type="date" class="form-control" placeholder="TTL" name = "TTL" id="TTL" aria-describedby="ttl" required>
+        </div>
+        <div class="mb-3">
+          <label for="" class="form-label">Gender</label>
+          <input type="text" class="form-control" placeholder="gender" name = "gender" id="gender" aria-describedby="gender" required>
+        </div>
+        <div class="mb-3">
+          <label for="" class="form-label">Email</label>
+          <input type="email" class="form-control" placeholder="email" name = "email" id="email" aria-describedby="email" required>
+        </div>
+        <div class="mb-3">
+          <label for="" class="form-label">No. Telepon</label>
+          <input type="tel" class="form-control" placeholder="telepon" name = "tel" id="tel" aria-describedby="tel" required>
+        </div>
+        
+        <button type="submit" name="add" class="btn btn-primary mt-3 container-fluid mb-3">Add</button>
+      </form>
+    </div>
+
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
